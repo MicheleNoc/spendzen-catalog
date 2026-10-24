@@ -1,0 +1,523 @@
+{
+  "schema": 1,
+  "version": 1,
+  "updated": "2026-10-23",
+  "currency": "EUR",
+  "country": "IT",
+  "popular": [
+    "netflix",
+    "spotify",
+    "disney",
+    "amazon",
+    "dazn",
+    "youtube",
+    "appletv",
+    "icloud",
+    "now",
+    "sky",
+    "paramount",
+    "chatgpt"
+  ],
+  "services": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "icon": "netflix",
+      "color": "#E50914",
+      "aliases": [
+        "netflix"
+      ],
+      "source": {
+        "url": "https://help.netflix.com/it/node/24926",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "std",
+      "plans": [
+        {
+          "id": "ads",
+          "name": {
+            "it": "Standard con pubblicità",
+            "en": "Standard with ads"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "std",
+          "name": {
+            "it": "Standard",
+            "en": "Standard"
+          },
+          "price": 13.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "icon": "spotify",
+      "color": "#1DB954",
+      "aliases": [
+        "spotify"
+      ],
+      "source": {
+        "url": "https://www.spotify.com/it/premium/",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individual",
+            "en": "Individual"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "duo",
+          "name": {
+            "it": "Duo",
+            "en": "Duo"
+          },
+          "price": 16.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Family",
+            "en": "Family"
+          },
+          "price": 20.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Student",
+            "en": "Student"
+          },
+          "price": 6.49,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    {
+      "id": "disney",
+      "name": "Disney+",
+      "icon": "disney",
+      "color": "#113CCF",
+      "aliases": [
+        "disney"
+      ],
+      "source": {
+        "url": "https://www.disneyplus.com/it-it",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "std",
+      "plans": [
+        {
+          "id": "ads",
+          "name": {
+            "it": "Standard con pubblicità",
+            "en": "Standard with ads"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "std",
+          "name": {
+            "it": "Standard",
+            "en": "Standard"
+          },
+          "price": 10.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 15.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stdy",
+          "name": {
+            "it": "Standard annuale",
+            "en": "Standard yearly"
+          },
+          "price": 109.9,
+          "cadence": "yearly"
+        },
+        {
+          "id": "premy",
+          "name": {
+            "it": "Premium annuale",
+            "en": "Premium yearly"
+          },
+          "price": 159.9,
+          "cadence": "yearly"
+        }
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon Prime",
+      "icon": "amazon",
+      "color": "#00A8E1",
+      "aliases": [
+        "amazon",
+        "prime video"
+      ]
+    },
+    {
+      "id": "dazn",
+      "name": "DAZN",
+      "icon": "dazn",
+      "color": "#FF6B00",
+      "aliases": [
+        "dazn"
+      ]
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "icon": "youtube",
+      "color": "#FF0000",
+      "aliases": [
+        "youtube"
+      ]
+    },
+    {
+      "id": "appletv",
+      "name": "Apple TV+",
+      "icon": "appletv",
+      "color": "#6E6E73",
+      "aliases": [
+        "apple tv"
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud+",
+      "icon": "icloud",
+      "color": "#3693F3",
+      "aliases": [
+        "icloud"
+      ]
+    },
+    {
+      "id": "now",
+      "name": "NOW",
+      "icon": "now",
+      "color": "#00D000",
+      "aliases": [
+        "now tv"
+      ]
+    },
+    {
+      "id": "sky",
+      "name": "Sky",
+      "icon": "sky",
+      "color": "#4A4A4A",
+      "aliases": [
+        "sky"
+      ]
+    },
+    {
+      "id": "paramount",
+      "name": "Paramount+",
+      "icon": "paramountplus",
+      "color": "#0064FF",
+      "aliases": [
+        "paramount"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "icon": null,
+      "color": "#412991",
+      "aliases": [
+        "chatgpt",
+        "openai"
+      ]
+    },
+    {
+      "id": "applemusic",
+      "name": "Apple Music",
+      "icon": "applemusic",
+      "color": "#FC3C44",
+      "aliases": [
+        "apple music"
+      ]
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "icon": "crunchyroll",
+      "color": "#F47521",
+      "aliases": [
+        "crunchyroll"
+      ]
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "icon": "twitch",
+      "color": "#9146FF",
+      "aliases": [
+        "twitch"
+      ]
+    },
+    {
+      "id": "discord",
+      "name": "Discord Nitro",
+      "icon": "discord",
+      "color": "#5865F2",
+      "aliases": [
+        "discord"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "icon": "dropbox",
+      "color": "#0061FF",
+      "aliases": [
+        "dropbox"
+      ]
+    },
+    {
+      "id": "googledrive",
+      "name": "Google Drive",
+      "icon": "googledrive",
+      "color": "#4285F4",
+      "aliases": [
+        "google drive",
+        "google one"
+      ]
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation Plus",
+      "icon": "playstation",
+      "color": "#003087",
+      "aliases": [
+        "playstation",
+        "ps plus"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "icon": "claude",
+      "color": "#D97757",
+      "aliases": [
+        "claude"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "icon": "googlegemini",
+      "color": "#8E75B2",
+      "aliases": [
+        "gemini"
+      ]
+    },
+    {
+      "id": "vodafone",
+      "name": "Vodafone",
+      "icon": "vodafone",
+      "color": "#E60000",
+      "aliases": [
+        "vodafone"
+      ],
+      "category": "Telefonia"
+    },
+    {
+      "id": "tidal",
+      "name": "Tidal",
+      "icon": "tidal",
+      "color": "#2C2C2C",
+      "aliases": [
+        "tidal"
+      ]
+    },
+    {
+      "id": "mubi",
+      "name": "Mubi",
+      "icon": "mubi",
+      "color": "#4A90D9",
+      "aliases": [
+        "mubi"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "icon": "notion",
+      "color": "#6E6E73",
+      "aliases": [
+        "notion"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "icon": "canva",
+      "color": "#00C4CC",
+      "aliases": [
+        "canva"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "luce",
+      "name": {
+        "it": "Luce",
+        "en": "Electricity"
+      },
+      "type": "bill",
+      "cadence": "bimonthly",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "luce",
+        "elettricità",
+        "electricity",
+        "energia"
+      ]
+    },
+    {
+      "id": "gas",
+      "name": {
+        "it": "Gas",
+        "en": "Gas"
+      },
+      "type": "bill",
+      "cadence": "bimonthly",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "gas"
+      ]
+    },
+    {
+      "id": "acqua",
+      "name": {
+        "it": "Acqua",
+        "en": "Water"
+      },
+      "type": "bill",
+      "cadence": "quarterly",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "acqua",
+        "water"
+      ]
+    },
+    {
+      "id": "internet",
+      "name": {
+        "it": "Internet casa",
+        "en": "Home internet"
+      },
+      "type": "subscription",
+      "cadence": "monthly",
+      "category": "Internet",
+      "aliases": [
+        "internet",
+        "fibra",
+        "wifi"
+      ]
+    },
+    {
+      "id": "telefono",
+      "name": {
+        "it": "Telefono",
+        "en": "Phone"
+      },
+      "type": "subscription",
+      "cadence": "monthly",
+      "category": "Telefonia",
+      "aliases": [
+        "telefono",
+        "cellulare",
+        "phone"
+      ]
+    },
+    {
+      "id": "affitto",
+      "name": {
+        "it": "Affitto",
+        "en": "Rent"
+      },
+      "type": "subscription",
+      "cadence": "monthly",
+      "category": "Affitto",
+      "aliases": [
+        "affitto",
+        "rent"
+      ]
+    },
+    {
+      "id": "mutuo",
+      "name": {
+        "it": "Mutuo",
+        "en": "Mortgage"
+      },
+      "type": "installment",
+      "cadence": "monthly",
+      "category": "Mutuo",
+      "aliases": [
+        "mutuo",
+        "mortgage"
+      ]
+    },
+    {
+      "id": "palestra",
+      "name": {
+        "it": "Palestra",
+        "en": "Gym"
+      },
+      "type": "subscription",
+      "cadence": "monthly",
+      "category": "Sport e Benessere",
+      "aliases": [
+        "palestra",
+        "gym"
+      ]
+    },
+    {
+      "id": "assicurazione-auto",
+      "name": {
+        "it": "Assicurazione auto",
+        "en": "Car insurance"
+      },
+      "type": "subscription",
+      "cadence": "yearly",
+      "category": "Assicurazione",
+      "aliases": [
+        "assicurazione",
+        "insurance",
+        "rc auto"
+      ]
+    }
+  ]
+}
