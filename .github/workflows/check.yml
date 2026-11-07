@@ -5,4 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 check.py
+      - if: github.event_name == 'push'
+        run: python3 check.py
+      # Sulle PR confronta anche i prezzi con main: oltre il 30% serve una revisione a mano.
+      - if: github.event_name == 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+          path: base
+      - if: github.event_name == 'pull_request'
+        run: python3 check.py --base base
