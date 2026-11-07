@@ -20,6 +20,7 @@ Regole:
 - Un prezzo si pubblica solo con `source.url` (pagina ufficiale) e `source.checked`. Se non è verificato, il servizio resta senza `plans` e l'app chiede l'importo.
 - `schema` cambia solo se cambia il formato e l'app è già stata aggiornata per leggerlo: le versioni vecchie dell'app ignorano i file con uno `schema` che non conoscono.
 - `icon` è la chiave del logo dentro l'app. Un servizio nuovo senza logo nell'app usa `null`.
-- `category` usa gli stessi nomi delle categorie dell'app.
+- `category` usa gli stessi nomi delle categorie dell'app (obbligatoria). Se l'app ha la categoria del marchio (Netflix, Spotify...), si usa quella: è lei a dare il logo.
+- `type` e `cadence` sul servizio sono facoltativi (`subscription`, `monthly`) e valgono quando non ci sono `plans`: per esempio `bill` e `bimonthly` per i fornitori di energia.
 
 Valori ammessi: `cadence` = `monthly`, `bimonthly`, `quarterly`, `semiannual`, `yearly`; `type` = `subscription`, `bill`, `installment`, `trial`, `one_off`.

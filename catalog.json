@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": 1,
-  "updated": "2026-10-23",
+  "version": 2,
+  "updated": "2026-11-07",
   "currency": "EUR",
   "country": "IT",
   "popular": [
@@ -25,7 +25,8 @@
       "icon": "netflix",
       "color": "#E50914",
       "aliases": [
-        "netflix"
+        "netflix",
+        "netflix.com"
       ],
       "source": {
         "url": "https://help.netflix.com/it/node/24926",
@@ -60,7 +61,8 @@
           "price": 19.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "Netflix"
     },
     {
       "id": "spotify",
@@ -68,7 +70,9 @@
       "icon": "spotify",
       "color": "#1DB954",
       "aliases": [
-        "spotify"
+        "spotify",
+        "spotify ab",
+        "spotify premium"
       ],
       "source": {
         "url": "https://www.spotify.com/it/premium/",
@@ -112,7 +116,8 @@
           "price": 6.49,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "Spotify"
     },
     {
       "id": "disney",
@@ -120,7 +125,9 @@
       "icon": "disney",
       "color": "#113CCF",
       "aliases": [
-        "disney"
+        "disney",
+        "disney plus",
+        "disneyplus"
       ],
       "source": {
         "url": "https://www.disneyplus.com/it-it",
@@ -173,7 +180,8 @@
           "price": 159.9,
           "cadence": "yearly"
         }
-      ]
+      ],
+      "category": "Disney+"
     },
     {
       "id": "amazon",
@@ -182,8 +190,11 @@
       "color": "#00A8E1",
       "aliases": [
         "amazon",
-        "prime video"
-      ]
+        "prime video",
+        "amazon prime",
+        "amzn prime"
+      ],
+      "category": "Amazon Prime"
     },
     {
       "id": "dazn",
@@ -191,8 +202,10 @@
       "icon": "dazn",
       "color": "#FF6B00",
       "aliases": [
-        "dazn"
-      ]
+        "dazn",
+        "dazn italia"
+      ],
+      "category": "DAZN"
     },
     {
       "id": "youtube",
@@ -200,8 +213,12 @@
       "icon": "youtube",
       "color": "#FF0000",
       "aliases": [
-        "youtube"
-      ]
+        "youtube",
+        "youtube premium",
+        "youtube music",
+        "google youtube"
+      ],
+      "category": "YouTube"
     },
     {
       "id": "appletv",
@@ -209,7 +226,26 @@
       "icon": "appletv",
       "color": "#6E6E73",
       "aliases": [
-        "apple tv"
+        "apple tv",
+        "apple tv+",
+        "appletv"
+      ],
+      "category": "Apple TV+",
+      "source": {
+        "url": "https://www.apple.com/it/apple-tv-plus/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "m",
+      "plans": [
+        {
+          "id": "m",
+          "name": {
+            "it": "Mensile",
+            "en": "Monthly"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        }
       ]
     },
     {
@@ -218,7 +254,62 @@
       "icon": "icloud",
       "color": "#3693F3",
       "aliases": [
-        "icloud"
+        "icloud",
+        "icloud+",
+        "icloud storage"
+      ],
+      "category": "iCloud+",
+      "source": {
+        "url": "https://support.apple.com/it-it/108047",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "200",
+      "plans": [
+        {
+          "id": "50",
+          "name": {
+            "it": "50 GB",
+            "en": "50 GB"
+          },
+          "price": 0.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "200",
+          "name": {
+            "it": "200 GB",
+            "en": "200 GB"
+          },
+          "price": 2.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "2tb",
+          "name": {
+            "it": "2 TB",
+            "en": "2 TB"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "6tb",
+          "name": {
+            "it": "6 TB",
+            "en": "6 TB"
+          },
+          "price": 29.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "12tb",
+          "name": {
+            "it": "12 TB",
+            "en": "12 TB"
+          },
+          "price": 59.99,
+          "cadence": "monthly"
+        }
       ]
     },
     {
@@ -227,7 +318,62 @@
       "icon": "now",
       "color": "#00D000",
       "aliases": [
-        "now tv"
+        "now tv",
+        "nowtv",
+        "now entertainment"
+      ],
+      "category": "NOW TV",
+      "source": {
+        "url": "https://www.nowtv.it/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "cine",
+      "plans": [
+        {
+          "id": "ent",
+          "name": {
+            "it": "Entertainment",
+            "en": "Entertainment"
+          },
+          "price": 8.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "cine",
+          "name": {
+            "it": "Cinema + Entertainment",
+            "en": "Cinema + Entertainment"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Cinema + Entertainment + Premium",
+            "en": "Cinema + Entertainment + Premium"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "sport",
+          "name": {
+            "it": "Sport",
+            "en": "Sport"
+          },
+          "price": 34.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "all",
+          "name": {
+            "it": "Cinema + Entertainment + Sport",
+            "en": "Cinema + Entertainment + Sport"
+          },
+          "price": 46.99,
+          "cadence": "monthly"
+        }
       ]
     },
     {
@@ -236,8 +382,12 @@
       "icon": "sky",
       "color": "#4A4A4A",
       "aliases": [
-        "sky"
-      ]
+        "sky",
+        "sky italia",
+        "sky tv",
+        "sky glass"
+      ],
+      "category": "Sky"
     },
     {
       "id": "paramount",
@@ -245,8 +395,11 @@
       "icon": "paramountplus",
       "color": "#0064FF",
       "aliases": [
-        "paramount"
-      ]
+        "paramount",
+        "paramount plus",
+        "paramount+"
+      ],
+      "category": "Paramount+"
     },
     {
       "id": "chatgpt",
@@ -255,8 +408,10 @@
       "color": "#412991",
       "aliases": [
         "chatgpt",
-        "openai"
-      ]
+        "openai",
+        "chatgpt plus"
+      ],
+      "category": "ChatGPT"
     },
     {
       "id": "applemusic",
@@ -265,6 +420,41 @@
       "color": "#FC3C44",
       "aliases": [
         "apple music"
+      ],
+      "category": "Apple Music",
+      "source": {
+        "url": "https://www.apple.com/it/apple-music/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individuale",
+            "en": "Individual"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Famiglia",
+            "en": "Family"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Studenti",
+            "en": "Student"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        }
       ]
     },
     {
@@ -274,7 +464,8 @@
       "color": "#F47521",
       "aliases": [
         "crunchyroll"
-      ]
+      ],
+      "category": "Crunchyroll"
     },
     {
       "id": "twitch",
@@ -282,8 +473,10 @@
       "icon": "twitch",
       "color": "#9146FF",
       "aliases": [
-        "twitch"
-      ]
+        "twitch",
+        "twitch turbo"
+      ],
+      "category": "Twitch"
     },
     {
       "id": "discord",
@@ -291,8 +484,11 @@
       "icon": "discord",
       "color": "#5865F2",
       "aliases": [
-        "discord"
-      ]
+        "discord",
+        "discord nitro",
+        "nitro"
+      ],
+      "category": "Discord"
     },
     {
       "id": "dropbox",
@@ -300,8 +496,10 @@
       "icon": "dropbox",
       "color": "#0061FF",
       "aliases": [
-        "dropbox"
-      ]
+        "dropbox",
+        "dropbox plus"
+      ],
+      "category": "Dropbox"
     },
     {
       "id": "googledrive",
@@ -310,7 +508,44 @@
       "color": "#4285F4",
       "aliases": [
         "google drive",
-        "google one"
+        "google one",
+        "google storage",
+        "google *google one"
+      ],
+      "category": "Google Drive",
+      "source": {
+        "url": "https://one.google.com/about/plans?hl=it",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "basic",
+      "plans": [
+        {
+          "id": "basic",
+          "name": {
+            "it": "Basic 100 GB",
+            "en": "Basic 100 GB"
+          },
+          "price": 1.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "aiplus",
+          "name": {
+            "it": "Google AI Plus 2 TB",
+            "en": "Google AI Plus 2 TB"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "aipro",
+          "name": {
+            "it": "Google AI Pro 5 TB",
+            "en": "Google AI Pro 5 TB"
+          },
+          "price": 21.99,
+          "cadence": "monthly"
+        }
       ]
     },
     {
@@ -320,8 +555,11 @@
       "color": "#003087",
       "aliases": [
         "playstation",
-        "ps plus"
-      ]
+        "ps plus",
+        "playstation plus",
+        "psn"
+      ],
+      "category": "PlayStation"
     },
     {
       "id": "claude",
@@ -329,8 +567,11 @@
       "icon": "claude",
       "color": "#D97757",
       "aliases": [
-        "claude"
-      ]
+        "claude",
+        "anthropic",
+        "claude pro"
+      ],
+      "category": "Claude"
     },
     {
       "id": "gemini",
@@ -338,8 +579,11 @@
       "icon": "googlegemini",
       "color": "#8E75B2",
       "aliases": [
-        "gemini"
-      ]
+        "gemini",
+        "google gemini",
+        "google ai pro"
+      ],
+      "category": "Google Gemini"
     },
     {
       "id": "vodafone",
@@ -347,9 +591,10 @@
       "icon": "vodafone",
       "color": "#E60000",
       "aliases": [
-        "vodafone"
+        "vodafone",
+        "vodafone italia"
       ],
-      "category": "Telefonia"
+      "category": "Vodafone"
     },
     {
       "id": "tidal",
@@ -358,7 +603,8 @@
       "color": "#2C2C2C",
       "aliases": [
         "tidal"
-      ]
+      ],
+      "category": "Tidal"
     },
     {
       "id": "mubi",
@@ -367,7 +613,8 @@
       "color": "#4A90D9",
       "aliases": [
         "mubi"
-      ]
+      ],
+      "category": "Mubi"
     },
     {
       "id": "notion",
@@ -375,8 +622,10 @@
       "icon": "notion",
       "color": "#6E6E73",
       "aliases": [
-        "notion"
-      ]
+        "notion",
+        "notion labs"
+      ],
+      "category": "Notion"
     },
     {
       "id": "canva",
@@ -384,7 +633,861 @@
       "icon": "canva",
       "color": "#00C4CC",
       "aliases": [
-        "canva"
+        "canva",
+        "canva pro"
+      ],
+      "category": "Canva"
+    },
+    {
+      "id": "discovery",
+      "name": "discovery+",
+      "icon": null,
+      "color": "#2175D9",
+      "category": "Streaming Video",
+      "aliases": [
+        "discovery+",
+        "discovery plus",
+        "discoveryplus"
+      ]
+    },
+    {
+      "id": "timvision",
+      "name": "TIMVISION",
+      "icon": null,
+      "color": "#004691",
+      "category": "Streaming Video",
+      "aliases": [
+        "timvision",
+        "tim vision"
+      ]
+    },
+    {
+      "id": "infinity",
+      "name": "Infinity+",
+      "icon": null,
+      "color": "#1E2A78",
+      "category": "Streaming Video",
+      "aliases": [
+        "infinity+",
+        "infinity plus",
+        "mediaset infinity"
+      ]
+    },
+    {
+      "id": "primevideochannels",
+      "name": "Prime Video Channels",
+      "icon": null,
+      "color": "#00A8E1",
+      "category": "Amazon Prime",
+      "aliases": [
+        "prime video channels",
+        "canali prime video"
+      ]
+    },
+    {
+      "id": "deezer",
+      "name": "Deezer",
+      "icon": null,
+      "color": "#A238FF",
+      "category": "Streaming Musica",
+      "aliases": [
+        "deezer"
+      ],
+      "source": {
+        "url": "https://www.deezer.com/it/offers",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "prem",
+      "plans": [
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Student",
+            "en": "Student"
+          },
+          "price": 5.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "duo",
+          "name": {
+            "it": "Duo",
+            "en": "Duo"
+          },
+          "price": 15.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Family",
+            "en": "Family"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem-y",
+          "name": {
+            "it": "Premium annuale",
+            "en": "Premium yearly"
+          },
+          "price": 107.99,
+          "cadence": "yearly"
+        }
+      ]
+    },
+    {
+      "id": "amazonmusic",
+      "name": "Amazon Music Unlimited",
+      "icon": null,
+      "color": "#25D1DA",
+      "category": "Streaming Musica",
+      "aliases": [
+        "amazon music",
+        "music unlimited"
+      ]
+    },
+    {
+      "id": "soundcloud",
+      "name": "SoundCloud Go+",
+      "icon": null,
+      "color": "#FF5500",
+      "category": "Streaming Musica",
+      "aliases": [
+        "soundcloud"
+      ]
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "icon": null,
+      "color": "#F8991C",
+      "category": "Svago",
+      "aliases": [
+        "audible"
+      ]
+    },
+    {
+      "id": "storytel",
+      "name": "Storytel",
+      "icon": null,
+      "color": "#FF4F00",
+      "category": "Svago",
+      "aliases": [
+        "storytel"
+      ]
+    },
+    {
+      "id": "kindleunlimited",
+      "name": "Kindle Unlimited",
+      "icon": null,
+      "color": "#FF9900",
+      "category": "Svago",
+      "aliases": [
+        "kindle unlimited"
+      ]
+    },
+    {
+      "id": "appleone",
+      "name": "Apple One",
+      "icon": null,
+      "color": "#000000",
+      "category": "Apple",
+      "aliases": [
+        "apple one"
+      ],
+      "source": {
+        "url": "https://www.apple.com/it/apple-one/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individuale",
+            "en": "Individual"
+          },
+          "price": 19.95,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Famiglia",
+            "en": "Family"
+          },
+          "price": 25.95,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 34.95,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    {
+      "id": "applearcade",
+      "name": "Apple Arcade",
+      "icon": null,
+      "color": "#000000",
+      "category": "Apple",
+      "aliases": [
+        "apple arcade"
+      ],
+      "source": {
+        "url": "https://www.apple.com/it/apple-arcade/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "m",
+      "plans": [
+        {
+          "id": "m",
+          "name": {
+            "it": "Mensile",
+            "en": "Monthly"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "y",
+          "name": {
+            "it": "Annuale",
+            "en": "Yearly"
+          },
+          "price": 49.99,
+          "cadence": "yearly"
+        }
+      ]
+    },
+    {
+      "id": "microsoft365",
+      "name": "Microsoft 365",
+      "icon": null,
+      "color": "#D83B01",
+      "category": "Servizi Cloud",
+      "aliases": [
+        "microsoft 365",
+        "office 365",
+        "onedrive",
+        "msft"
+      ]
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe Creative Cloud",
+      "icon": null,
+      "color": "#FF0000",
+      "category": "Adobe",
+      "aliases": [
+        "adobe",
+        "creative cloud",
+        "photoshop",
+        "lightroom",
+        "acrobat"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "icon": null,
+      "color": "#F24E1E",
+      "category": "Figma",
+      "aliases": [
+        "figma"
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "icon": null,
+      "color": "#4A154B",
+      "category": "Slack",
+      "aliases": [
+        "slack"
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "icon": null,
+      "color": "#0B5CFF",
+      "category": "Zoom",
+      "aliases": [
+        "zoom.us",
+        "zoom video"
+      ]
+    },
+    {
+      "id": "githubcopilot",
+      "name": "GitHub Copilot",
+      "icon": null,
+      "color": "#000000",
+      "category": "GitHub Copilot",
+      "aliases": [
+        "github copilot",
+        "copilot"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "icon": null,
+      "color": "#1FB8CD",
+      "category": "Tecnologia",
+      "aliases": [
+        "perplexity"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "icon": null,
+      "color": "#000000",
+      "category": "Tecnologia",
+      "aliases": [
+        "midjourney"
+      ]
+    },
+    {
+      "id": "onepassword",
+      "name": "1Password",
+      "icon": null,
+      "color": "#0094F5",
+      "category": "Tecnologia",
+      "aliases": [
+        "1password",
+        "agilebits"
+      ]
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "icon": null,
+      "color": "#4687FF",
+      "category": "Tecnologia",
+      "aliases": [
+        "nordvpn",
+        "nord vpn",
+        "nordsec"
+      ]
+    },
+    {
+      "id": "protonmail",
+      "name": "Proton",
+      "icon": null,
+      "color": "#6D4AFF",
+      "category": "Tecnologia",
+      "aliases": [
+        "proton mail",
+        "proton vpn",
+        "proton ag"
+      ]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram Premium",
+      "icon": null,
+      "color": "#26A5E4",
+      "category": "Telegram",
+      "aliases": [
+        "telegram premium",
+        "telegram"
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox Game Pass",
+      "icon": null,
+      "color": "#107C10",
+      "category": "Svago",
+      "aliases": [
+        "xbox game pass",
+        "game pass",
+        "xbox"
+      ]
+    },
+    {
+      "id": "nintendo",
+      "name": "Nintendo Switch Online",
+      "icon": null,
+      "color": "#E60012",
+      "category": "Svago",
+      "aliases": [
+        "nintendo switch online",
+        "nintendo"
+      ]
+    },
+    {
+      "id": "eaplay",
+      "name": "EA Play",
+      "icon": null,
+      "color": "#FF4747",
+      "category": "EA",
+      "aliases": [
+        "ea play",
+        "electronic arts"
+      ]
+    },
+    {
+      "id": "ubisoftplus",
+      "name": "Ubisoft+",
+      "icon": null,
+      "color": "#000000",
+      "category": "Ubisoft",
+      "aliases": [
+        "ubisoft+",
+        "ubisoft plus",
+        "ubisoft"
+      ]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "icon": null,
+      "color": "#58CC02",
+      "category": "Istruzione",
+      "aliases": [
+        "duolingo",
+        "super duolingo"
+      ]
+    },
+    {
+      "id": "babbel",
+      "name": "Babbel",
+      "icon": null,
+      "color": "#FF6A00",
+      "category": "Istruzione",
+      "aliases": [
+        "babbel"
+      ]
+    },
+    {
+      "id": "ilpost",
+      "name": "Il Post",
+      "icon": null,
+      "color": "#000000",
+      "category": "Svago",
+      "aliases": [
+        "il post",
+        "ilpost"
+      ]
+    },
+    {
+      "id": "corriere",
+      "name": "Corriere della Sera",
+      "icon": null,
+      "color": "#000000",
+      "category": "Svago",
+      "aliases": [
+        "corriere della sera",
+        "corriere.it",
+        "rcs mediagroup"
+      ]
+    },
+    {
+      "id": "repubblica",
+      "name": "la Repubblica",
+      "icon": null,
+      "color": "#000000",
+      "category": "Svago",
+      "aliases": [
+        "repubblica",
+        "gedi"
+      ]
+    },
+    {
+      "id": "sole24ore",
+      "name": "Il Sole 24 Ore",
+      "icon": null,
+      "color": "#E2001A",
+      "category": "Svago",
+      "aliases": [
+        "sole 24 ore",
+        "sole24ore"
+      ]
+    },
+    {
+      "id": "revolut",
+      "name": "Revolut",
+      "icon": null,
+      "color": "#191C1F",
+      "category": "Revolut",
+      "aliases": [
+        "revolut"
+      ]
+    },
+    {
+      "id": "n26",
+      "name": "N26",
+      "icon": null,
+      "color": "#36A18B",
+      "category": "N26",
+      "aliases": [
+        "n26"
+      ]
+    },
+    {
+      "id": "tim",
+      "name": "TIM",
+      "icon": null,
+      "color": "#004691",
+      "category": "Telefonia",
+      "aliases": [
+        "tim mobile",
+        "telecom italia",
+        "tim fibra"
+      ]
+    },
+    {
+      "id": "windtre",
+      "name": "WindTre",
+      "icon": null,
+      "color": "#FF6A00",
+      "category": "Telefonia",
+      "aliases": [
+        "windtre",
+        "wind tre",
+        "wind3"
+      ]
+    },
+    {
+      "id": "iliad",
+      "name": "Iliad",
+      "icon": null,
+      "color": "#CC0000",
+      "category": "Telefonia",
+      "aliases": [
+        "iliad"
+      ]
+    },
+    {
+      "id": "homobile",
+      "name": "ho. Mobile",
+      "icon": null,
+      "color": "#00B2A9",
+      "category": "Telefonia",
+      "aliases": [
+        "ho. mobile",
+        "ho mobile",
+        "homobile"
+      ]
+    },
+    {
+      "id": "kena",
+      "name": "Kena Mobile",
+      "icon": null,
+      "color": "#00A3E0",
+      "category": "Telefonia",
+      "aliases": [
+        "kena"
+      ]
+    },
+    {
+      "id": "verymobile",
+      "name": "Very Mobile",
+      "icon": null,
+      "color": "#7A2E8E",
+      "category": "Telefonia",
+      "aliases": [
+        "very mobile"
+      ]
+    },
+    {
+      "id": "postemobile",
+      "name": "PosteMobile",
+      "icon": null,
+      "color": "#FFD100",
+      "category": "Telefonia",
+      "aliases": [
+        "postemobile",
+        "poste mobile"
+      ]
+    },
+    {
+      "id": "coopvoce",
+      "name": "CoopVoce",
+      "icon": null,
+      "color": "#E30613",
+      "category": "Telefonia",
+      "aliases": [
+        "coopvoce",
+        "coop voce"
+      ]
+    },
+    {
+      "id": "fastweb",
+      "name": "Fastweb",
+      "icon": null,
+      "color": "#FFCC00",
+      "category": "Internet",
+      "aliases": [
+        "fastweb"
+      ]
+    },
+    {
+      "id": "skywifi",
+      "name": "Sky Wifi",
+      "icon": null,
+      "color": "#0072C9",
+      "category": "Internet",
+      "aliases": [
+        "sky wifi"
+      ]
+    },
+    {
+      "id": "tiscali",
+      "name": "Tiscali",
+      "icon": null,
+      "color": "#00205B",
+      "category": "Internet",
+      "aliases": [
+        "tiscali"
+      ]
+    },
+    {
+      "id": "starlink",
+      "name": "Starlink",
+      "icon": null,
+      "color": "#000000",
+      "category": "Internet",
+      "aliases": [
+        "starlink",
+        "spacex"
+      ]
+    },
+    {
+      "id": "eolo",
+      "name": "EOLO",
+      "icon": null,
+      "color": "#00A0DF",
+      "category": "Internet",
+      "aliases": [
+        "eolo"
+      ]
+    },
+    {
+      "id": "enel",
+      "name": "Enel Energia",
+      "icon": null,
+      "color": "#0555FA",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "enel energia",
+        "enel"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "plenitude",
+      "name": "Eni Plenitude",
+      "icon": null,
+      "color": "#FFD100",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "plenitude",
+        "eni gas e luce",
+        "eni plenitude"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "edison",
+      "name": "Edison Energia",
+      "icon": null,
+      "color": "#E2001A",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "edison"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "a2a",
+      "name": "A2A Energia",
+      "icon": null,
+      "color": "#0072BC",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "a2a"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "hera",
+      "name": "Hera Comm",
+      "icon": null,
+      "color": "#00A0DF",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "hera comm",
+        "gruppo hera"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "iren",
+      "name": "Iren",
+      "icon": null,
+      "color": "#E30613",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "iren mercato",
+        "iren"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "acea",
+      "name": "Acea Energia",
+      "icon": null,
+      "color": "#0069B4",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "acea"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "sorgenia",
+      "name": "Sorgenia",
+      "icon": null,
+      "color": "#00A651",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "sorgenia"
+      ],
+      "type": "bill",
+      "cadence": "monthly"
+    },
+    {
+      "id": "illumia",
+      "name": "Illumia",
+      "icon": null,
+      "color": "#E4007C",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "illumia"
+      ],
+      "type": "bill",
+      "cadence": "bimonthly"
+    },
+    {
+      "id": "octopus",
+      "name": "Octopus Energy",
+      "icon": null,
+      "color": "#5840FF",
+      "category": "Utenze Domestiche",
+      "aliases": [
+        "octopus energy"
+      ],
+      "type": "bill",
+      "cadence": "monthly"
+    },
+    {
+      "id": "mcfit",
+      "name": "McFit",
+      "icon": null,
+      "color": "#E30613",
+      "category": "Sport e Benessere",
+      "aliases": [
+        "mcfit",
+        "rsg group"
+      ]
+    },
+    {
+      "id": "virginactive",
+      "name": "Virgin Active",
+      "icon": null,
+      "color": "#E10A0A",
+      "category": "Sport e Benessere",
+      "aliases": [
+        "virgin active"
+      ]
+    },
+    {
+      "id": "anytimefitness",
+      "name": "Anytime Fitness",
+      "icon": null,
+      "color": "#5E2A84",
+      "category": "Sport e Benessere",
+      "aliases": [
+        "anytime fitness"
+      ]
+    },
+    {
+      "id": "fitactive",
+      "name": "FitActive",
+      "icon": null,
+      "color": "#E2001A",
+      "category": "Sport e Benessere",
+      "aliases": [
+        "fitactive",
+        "fit active"
+      ]
+    },
+    {
+      "id": "telepass",
+      "name": "Telepass",
+      "icon": null,
+      "color": "#00A0E1",
+      "category": "Trasporti",
+      "aliases": [
+        "telepass"
+      ]
+    },
+    {
+      "id": "unipolmove",
+      "name": "UnipolMove",
+      "icon": null,
+      "color": "#0055A4",
+      "category": "Trasporti",
+      "aliases": [
+        "unipolmove",
+        "unipol move"
+      ]
+    },
+    {
+      "id": "deliveroo",
+      "name": "Deliveroo Plus",
+      "icon": null,
+      "color": "#00CCBC",
+      "category": "Cibo",
+      "aliases": [
+        "deliveroo"
+      ]
+    },
+    {
+      "id": "glovo",
+      "name": "Glovo Prime",
+      "icon": null,
+      "color": "#FFC244",
+      "category": "Cibo",
+      "aliases": [
+        "glovo"
       ]
     }
   ],

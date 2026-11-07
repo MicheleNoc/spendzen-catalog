@@ -30,6 +30,10 @@ for s in c["services"]:
         err(f"{where}: color non valido")
     if not s.get("aliases"):
         err(f"{where}: servono gli alias")
+    if not s.get("category"):
+        err(f"{where}: serve la categoria")
+    if s.get("type", "subscription") not in TYPES or s.get("cadence", "monthly") not in CADENCES:
+        err(f"{where}: type o cadence non validi")
     plans = s.get("plans")
     if plans is None:
         continue
