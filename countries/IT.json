@@ -1,0 +1,471 @@
+{
+  "version": 2,
+  "updated": "2026-11-07",
+  "currency": "EUR",
+  "popular": [
+    "netflix",
+    "spotify",
+    "disney",
+    "amazon",
+    "dazn",
+    "youtube",
+    "appletv",
+    "icloud",
+    "now",
+    "sky",
+    "paramount",
+    "chatgpt"
+  ],
+  "prices": {
+    "netflix": {
+      "source": {
+        "url": "https://help.netflix.com/it/node/24926",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "std",
+      "plans": [
+        {
+          "id": "ads",
+          "name": {
+            "it": "Standard con pubblicità",
+            "en": "Standard with ads"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "std",
+          "name": {
+            "it": "Standard",
+            "en": "Standard"
+          },
+          "price": 13.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "spotify": {
+      "source": {
+        "url": "https://www.spotify.com/it/premium/",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individual",
+            "en": "Individual"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "duo",
+          "name": {
+            "it": "Duo",
+            "en": "Duo"
+          },
+          "price": 16.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Family",
+            "en": "Family"
+          },
+          "price": 20.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Student",
+            "en": "Student"
+          },
+          "price": 6.49,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "disney": {
+      "source": {
+        "url": "https://www.disneyplus.com/it-it",
+        "checked": "2026-10-23"
+      },
+      "typicalPlan": "std",
+      "plans": [
+        {
+          "id": "ads",
+          "name": {
+            "it": "Standard con pubblicità",
+            "en": "Standard with ads"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "std",
+          "name": {
+            "it": "Standard",
+            "en": "Standard"
+          },
+          "price": 10.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 15.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stdy",
+          "name": {
+            "it": "Standard annuale",
+            "en": "Standard yearly"
+          },
+          "price": 109.9,
+          "cadence": "yearly"
+        },
+        {
+          "id": "premy",
+          "name": {
+            "it": "Premium annuale",
+            "en": "Premium yearly"
+          },
+          "price": 159.9,
+          "cadence": "yearly"
+        }
+      ]
+    },
+    "appletv": {
+      "source": {
+        "url": "https://www.apple.com/it/apple-tv-plus/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "m",
+      "plans": [
+        {
+          "id": "m",
+          "name": {
+            "it": "Mensile",
+            "en": "Monthly"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "icloud": {
+      "source": {
+        "url": "https://support.apple.com/it-it/108047",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "200",
+      "plans": [
+        {
+          "id": "50",
+          "name": {
+            "it": "50 GB",
+            "en": "50 GB"
+          },
+          "price": 0.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "200",
+          "name": {
+            "it": "200 GB",
+            "en": "200 GB"
+          },
+          "price": 2.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "2tb",
+          "name": {
+            "it": "2 TB",
+            "en": "2 TB"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "6tb",
+          "name": {
+            "it": "6 TB",
+            "en": "6 TB"
+          },
+          "price": 29.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "12tb",
+          "name": {
+            "it": "12 TB",
+            "en": "12 TB"
+          },
+          "price": 59.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "now": {
+      "source": {
+        "url": "https://www.nowtv.it/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "cine",
+      "plans": [
+        {
+          "id": "ent",
+          "name": {
+            "it": "Entertainment",
+            "en": "Entertainment"
+          },
+          "price": 8.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "cine",
+          "name": {
+            "it": "Cinema + Entertainment",
+            "en": "Cinema + Entertainment"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Cinema + Entertainment + Premium",
+            "en": "Cinema + Entertainment + Premium"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "sport",
+          "name": {
+            "it": "Sport",
+            "en": "Sport"
+          },
+          "price": 34.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "all",
+          "name": {
+            "it": "Cinema + Entertainment + Sport",
+            "en": "Cinema + Entertainment + Sport"
+          },
+          "price": 46.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "applemusic": {
+      "source": {
+        "url": "https://www.apple.com/it/apple-music/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individuale",
+            "en": "Individual"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Famiglia",
+            "en": "Family"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Studenti",
+            "en": "Student"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "googledrive": {
+      "source": {
+        "url": "https://one.google.com/about/plans?hl=it",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "basic",
+      "plans": [
+        {
+          "id": "basic",
+          "name": {
+            "it": "Basic 100 GB",
+            "en": "Basic 100 GB"
+          },
+          "price": 1.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "aiplus",
+          "name": {
+            "it": "Google AI Plus 2 TB",
+            "en": "Google AI Plus 2 TB"
+          },
+          "price": 9.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "aipro",
+          "name": {
+            "it": "Google AI Pro 5 TB",
+            "en": "Google AI Pro 5 TB"
+          },
+          "price": 21.99,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "deezer": {
+      "source": {
+        "url": "https://www.deezer.com/it/offers",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "prem",
+      "plans": [
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 11.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "stu",
+          "name": {
+            "it": "Student",
+            "en": "Student"
+          },
+          "price": 5.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "duo",
+          "name": {
+            "it": "Duo",
+            "en": "Duo"
+          },
+          "price": 15.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Family",
+            "en": "Family"
+          },
+          "price": 19.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem-y",
+          "name": {
+            "it": "Premium annuale",
+            "en": "Premium yearly"
+          },
+          "price": 107.99,
+          "cadence": "yearly"
+        }
+      ]
+    },
+    "appleone": {
+      "source": {
+        "url": "https://www.apple.com/it/apple-one/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "ind",
+      "plans": [
+        {
+          "id": "ind",
+          "name": {
+            "it": "Individuale",
+            "en": "Individual"
+          },
+          "price": 19.95,
+          "cadence": "monthly"
+        },
+        {
+          "id": "fam",
+          "name": {
+            "it": "Famiglia",
+            "en": "Family"
+          },
+          "price": 25.95,
+          "cadence": "monthly"
+        },
+        {
+          "id": "prem",
+          "name": {
+            "it": "Premium",
+            "en": "Premium"
+          },
+          "price": 34.95,
+          "cadence": "monthly"
+        }
+      ]
+    },
+    "applearcade": {
+      "source": {
+        "url": "https://www.apple.com/it/apple-arcade/",
+        "checked": "2026-11-07"
+      },
+      "typicalPlan": "m",
+      "plans": [
+        {
+          "id": "m",
+          "name": {
+            "it": "Mensile",
+            "en": "Monthly"
+          },
+          "price": 6.99,
+          "cadence": "monthly"
+        },
+        {
+          "id": "y",
+          "name": {
+            "it": "Annuale",
+            "en": "Yearly"
+          },
+          "price": 49.99,
+          "cadence": "yearly"
+        }
+      ]
+    }
+  }
+}
