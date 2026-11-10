@@ -14,11 +14,22 @@ L'app scarica solo il file della regione del dispositivo: `catalog.json` per l'I
 
 Indirizzo: `https://cdn.jsdelivr.net/gh/MicheleNoc/spendzen-catalog@main/<file>`. La richiesta non contiene dati dell'utente, e l'app la fa al massimo una volta a settimana. L'app ha una copia inclusa e usa quella scaricata solo se `version` è più alta.
 
+## Sorgenti
+
+I `catalog*.json` sono **generati** da `build.py` e non si modificano a mano. Le sorgenti sono:
+
+- `services.json`: i servizi (nome, logo, alias, categoria) e i modelli, una volta sola per tutti i paesi. Un servizio con `"countries": ["IT"]` esiste solo in quei paesi; senza, è internazionale.
+- `countries/XX.json`: per ogni paese `version`, `updated`, `currency`, `popular` e i `prices` (per id del servizio: `source`, `typicalPlan`, `plans`). `countries/global.json` non ha prezzi.
+
+Aggiungere un paese = aggiungere `countries/XX.json` con i soli prezzi verificati.
+
 ## Aggiornare
 
-1. Modifica il file del paese: prezzo, `source.checked` con la data di oggi, e `version` + 1.
-2. `python3 check.py` (lo fa anche GitHub a ogni push e su ogni PR).
+1. Modifica la sorgente. Per un prezzo: `countries/XX.json`, con `source.checked` di oggi e `version` + 1. Se cambi `services.json`, aumenta `version` in tutti i file di `countries/`.
+2. `python3 build.py && python3 check.py` (lo fa anche GitHub a ogni push e su ogni PR, e fallisce se i file generati non corrispondono alle sorgenti).
 3. Meglio una PR che un push su `main`: sulle PR `check.py --base` confronta i prezzi con `main` e fallisce se uno cambia oltre il 30%, così una lettura sbagliata non arriva alle app senza una revisione. Le app vedono `main` entro circa 12 ore (cache di jsDelivr).
+
+Una routine mensile rilegge ogni `source.url` e apre una PR con i prezzi cambiati e le date di verifica aggiornate. L'app non propone un prezzo verificato da più di 6 mesi: se la routine si ferma, torna a chiedere l'importo.
 
 Regole (controllate da `check.py`):
 - Un prezzo si pubblica solo con `source.url` (pagina ufficiale) e `source.checked`. Se non è verificato, il servizio resta senza `plans` e l'app chiede l'importo. Mai prezzi "a partire da".

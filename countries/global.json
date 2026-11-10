@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "updated": "2026-11-07",
+  "currency": null,
+  "popular": [
+    "netflix",
+    "spotify",
+    "disney",
+    "amazon",
+    "youtube",
+    "appletv",
+    "icloud",
+    "chatgpt",
+    "applemusic",
+    "googledrive",
+    "playstation",
+    "xbox"
+  ],
+  "prices": {}
+}

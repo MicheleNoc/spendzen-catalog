@@ -230,7 +230,6 @@
         "apple tv+",
         "appletv"
       ],
-      "category": "Apple TV+",
       "source": {
         "url": "https://www.apple.com/it/apple-tv-plus/",
         "checked": "2026-11-07"
@@ -246,7 +245,8 @@
           "price": 9.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "Apple TV+"
     },
     {
       "id": "icloud",
@@ -258,7 +258,6 @@
         "icloud+",
         "icloud storage"
       ],
-      "category": "iCloud+",
       "source": {
         "url": "https://support.apple.com/it-it/108047",
         "checked": "2026-11-07"
@@ -310,7 +309,8 @@
           "price": 59.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "iCloud+"
     },
     {
       "id": "now",
@@ -322,7 +322,6 @@
         "nowtv",
         "now entertainment"
       ],
-      "category": "NOW TV",
       "source": {
         "url": "https://www.nowtv.it/",
         "checked": "2026-11-07"
@@ -374,7 +373,8 @@
           "price": 46.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "NOW TV"
     },
     {
       "id": "sky",
@@ -421,7 +421,6 @@
       "aliases": [
         "apple music"
       ],
-      "category": "Apple Music",
       "source": {
         "url": "https://www.apple.com/it/apple-music/",
         "checked": "2026-11-07"
@@ -455,7 +454,8 @@
           "price": 6.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "Apple Music"
     },
     {
       "id": "crunchyroll",
@@ -512,7 +512,6 @@
         "google storage",
         "google *google one"
       ],
-      "category": "Google Drive",
       "source": {
         "url": "https://one.google.com/about/plans?hl=it",
         "checked": "2026-11-07"
@@ -546,7 +545,8 @@
           "price": 21.99,
           "cadence": "monthly"
         }
-      ]
+      ],
+      "category": "Google Drive"
     },
     {
       "id": "playstation",

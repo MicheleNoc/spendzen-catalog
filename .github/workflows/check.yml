@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # I catalog*.json devono essere quelli generati dalle sorgenti.
+      - run: python3 build.py && git diff --exit-code
       - if: github.event_name == 'push'
         run: python3 check.py
       # Sulle PR confronta anche i prezzi con main: oltre il 30% serve una revisione a mano.
